@@ -36,6 +36,7 @@
                                     <artifact>*:*</artifact>
                                     <excludes>
                                         <exclude>org/slf4j/**</exclude>
+                                        <exclude>com/google/inject/**</exclude>
                                     </excludes>
                                 </filter>
                             </filters>
