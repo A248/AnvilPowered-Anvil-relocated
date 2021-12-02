@@ -88,10 +88,6 @@
                                     <shadedPattern>org.anvilpowered.anvil.shaded.jetbrains.exodus</shadedPattern>
                                 </relocation>
                                 <relocation>
-                                    <pattern>jetbrains.exodus.io.FileDataReaderWriterProvider</pattern>
-                                    <shadedPattern>org.anvilpowered.anvil.shaded.jetbrains.exodus.io.FileDataReaderWriterProvider</shadedPattern>
-                                </relocation>
-                                <relocation>
                                     <pattern>kotlin</pattern>
                                     <shadedPattern>org.anvilpowered.anvil.shaded.kotlin</shadedPattern>
                                 </relocation>
@@ -185,6 +181,9 @@
                                     <shadedPattern>org.anvilpowered.catalyst.shaded.org.json</shadedPattern>
                                 </relocation>
                             </relocations>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                            </transformers>
                         </configuration>
                     </execution>
                 </executions>
