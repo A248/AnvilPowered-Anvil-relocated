@@ -36,6 +36,7 @@
                                     <artifact>*:*</artifact>
                                     <excludes>
                                         <exclude>org/slf4j/**</exclude>
+                                        <exclude>com/google/common/**</exclude>
                                         <exclude>com/google/inject/**</exclude>
                                     </excludes>
                                 </filter>
@@ -45,10 +46,6 @@
                                 <relocation>
                                     <pattern>com.flowpowered</pattern>
                                     <shadedPattern>org.anvilpowered.anvil.shaded.com.flowpowered</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>com.google.common</pattern>
-                                    <shadedPattern>org.anvilpowered.anvil.shaded.com.google.common</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>com.google.thirdparty</pattern>
